@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: #f2f5fa;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.profile-sidebar {
+    padding: 30px 22px;
+    background: linear-gradient(160deg, #1565C0, #0d3f7a);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #1565C0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.profile-sidebar h1 {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.job-title {
+    margin: 0 0 18px;
+    font-size: 14px;
+}
+
+.contact-info {
+    font-style: normal;
+    text-align: left;
+}
+
+.contact-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 5px;
+    overflow-wrap: anywhere;
+}
+
+.contact-list span {
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+}
+
+.contact-list a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.profile-content {
+    min-width: 0;
+    padding: 24px 30px;
+}
+
+.profile-section {
+    margin-bottom: 14px;
+}
+
+.profile-section:last-child {
+    margin-bottom: 0;
+}
+
+.profile-section h2 {
+    margin: 0 0 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e1e9f3;
+    color: #1565C0;
+    font-size: 17px;
+}
+
+.profile-section p {
+    margin: 0;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-list li {
+    padding: 2px 15px;
+    border-radius: 20px;
+    background: #e3f0ff;
+    color: #0d3f7a;
+    font-size: 13px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links li+li::before {
+    content: "·";
+    margin-right: 5px;
+}
+
+.social-links a {
+    color: #1565C0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
