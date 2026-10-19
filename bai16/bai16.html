@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Bài 16 – Danh sách việc cần làm
+    </title>
+    <link rel="stylesheet" href="bai16.css">
+    <script src="bai16.js" defer>
+    </script>
+  </head>
+  <body>
+    <main class="panel">
+      <header class="heading">
+        <h1>
+          Danh sách việc cần làm
+        </h1>
+        <p>
+          Thêm việc mới, đánh dấu hoàn thành hoặc xoá – tất cả bằng JavaScript.
+        </p>
+      </header>
+      <div class="pad">
+        <form>
+          <label for="task">
+            Công việc mới
+          </label>
+          <div class="entry">
+            <input id="task" placeholder="Nhập việc cần làm…" maxlength="200" required>
+            <button>
+              Thêm
+            </button>
+          </div>
+        </form>
+        <ul id="tasks">
+        </ul>
+        <p id="count" class="muted" role="status">
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Bài 17 – Đăng ký tài khoản
+    </title>
+    <link rel="stylesheet" href="bai17.css">
+    <script src="bai17.js" defer>
+    </script>
+  </head>
+  <body>
+    <main class="panel pad">
+      <h1>
+        Đăng ký tài khoản
+      </h1>
+      <p class="muted">
+        Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.
+      </p>
+      <form novalidate>
+        <div class="field">
+          <label for="name">
+            Họ và tên
+          </label>
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error" required>
+          <small id="name-error">
+          </small>
+        </div>
+        <div class="field">
+          <label for="email">
+            Email
+          </label>
+          <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" required>
+          <small id="email-error">
+          </small>
+        </div>
+        <div class="field">
+          <label for="password">
+            Mật khẩu
+          </label>
+          <input id="password" name="password" type="password" autocomplete="new-password" aria-describedby="password-error" required>
+          <small id="password-error">
+          </small>
+        </div>
+        <div class="field">
+          <label for="confirm">
+            Xác nhận mật khẩu
+          </label>
+          <input id="confirm" name="confirm" type="password" autocomplete="new-password" aria-describedby="confirm-error" required>
+          <small id="confirm-error">
+          </small>
+        </div>
+        <button>
+          Đăng ký
+        </button>
+        <p class="status" role="status">
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
